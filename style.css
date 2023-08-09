@@ -1,0 +1,68 @@
+/* Color Palette https://coolors.co/palette/6b9080-a4c3b2-cce3de-eaf4f4-f6fff8*/
+@import url("https://fonts.googleapis.com/css2?family=Saira:wght@300;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Saira", "sans-serif";
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(204, 227, 222);
+}
+
+.container {
+  position: relative;
+  max-width: 300px;
+  width: 100%;
+  border-radius: 20px;
+  padding: 10px 20px 20px;
+  background-color: rgb(164, 195, 178);
+  box-shadow: 0 5px 10px rgba(107, 144, 128, 0.952);
+}
+
+.display {
+  height: 80px;
+  width: 100%;
+  outline: none;
+  border-radius: 15px;
+  border: none;
+  text-align: right;
+  padding-right: 15px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  font-size: 30px;
+  color: #8f7e4f;
+}
+
+.buttons {
+  display: grid;
+  grid-gap: 10px; /*property defines the size of the gap between the rows and columns in a grid layout, and is a shorthand property for the following properties: grid-row-gap and grid-column-gap*/
+  grid-template-columns: repeat(
+    4,
+    1fr
+  ); /*  specifies the number (and the widths) of columns in a grid layout.*/
+}
+
+.buttons button {
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: rgb(234, 244, 244);
+}
+
+.buttons button:active {
+  transform: scale(
+    0.99
+  ); /*property applies a 2D or 3D transformation to an element. This property allows you to rotate, scale, move, skew, etc., elements.*/
+}
+
+.operator {
+  color: rgb(74, 130, 130);
+}
